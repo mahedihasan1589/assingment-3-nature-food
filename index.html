@@ -7,14 +7,157 @@
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+   <style>
+    .sora {
+      font-family: "Sora", serif;
+    }
+  </style>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color: 'rgba(239, 235, 227, 1)',
+            colors: '#179800',
+            col: 'rgba(255, 255, 255, 1)',
+            colr: ' #FFFFFF',
+            greens: 'rgba(99, 183, 109, 1)',
+            colerst: ' #115414',
+            blue: ' rgba(16, 40, 97, 1)',
+            foter: ' #179800',
+            register:'#179800',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <header>
+<body class="sora">
+  <header class="md:container bg-color mx-auto max-w-screen-xl">
+    <!-- nabbar stars -->
+    <div class="navbar bg-color">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Product</a></li>
+            <li>
+              <a>Services</a>
+            </li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+         <div>
+          <img src="assets/logo-header.png" alt="">
+         </div>
         
-    </header>
-    <main>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Product</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-5">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a class="btn border-green-400 text-black w-28">Login</a>
+        <a class="btn bg-register text-white w-40">Register</a>
+      </div>
+    </div>
+    <!-- banner section -->
+    <div class="hero bg-color mx-auto max-w-screen-xl">
+      <div class="hero-content text-center">
+        <div class="">
+          <h1 class="font-bold lg:text-5xl sm:text-2xl animate-bounce">Freshness <span class="text-colors">You Can <br>
+              Count</span> On, Prices You’ll Love!</h1>
+          <p class="lg:text-xl  sm:text-base mt-7 animate-bounce">Shop your daily essentials at unbeatable prices. From
+            fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+          <img class="lg:w-full sm:w-1/2" src="assets/hero-vegetables.png" alt="">
+  
+        </div>
+      </div>
+    </div>
+  </header>
+    <main class="mx:container mx-auto">
+            <!-- fresh food section -->
+            <section>
+              <!-- text section -->
+              
+                <div><h1 class="text-4xl font-semibold text-[#179800] my-5">Fresh Vegetables</h1></div>
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="card  bg-green-100 w-96 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img 
+                      src="assets/lemon.jpeg"
+                      alt="lemon"
+                      class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Lemon</h2>
+                    <p>$20</p>
+                    <div class="card-actions">
+                      <button class="btn bg-green-400">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+                 
+              <!-- card 2 -->
+              <div class="card  bg-green-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img 
+                    src="assets/sosa.jpeg"
+                    alt="cucumber"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title"> cucumber</h2>
+                  <p>$20</p>
+                  <div class="card-actions">
+                    <button class="btn bg-green-400">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card bg-green-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="assets/capsicum.jpeg"
+                    alt="capsicum"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">capsicum</h2>
+                  <p>$20</p>
+                  <div class="card-actions">
+                    <button class="btn bg-green-400">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+               </div>
+            </section>
 
+            <!--  -->
     </main>
     <footer>
 
